@@ -2,7 +2,7 @@
 
 namespace BitWasp\BitcoinLib;
 
-use Mdanter\Ecc\EccFactory;
+use Wangjunasd\Ecc\EccFactory;
 
 /**
  * Electrum Library

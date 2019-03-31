@@ -2,7 +2,7 @@
 
 use BitWasp\BitcoinLib\BitcoinLib;
 use BitWasp\BitcoinLib\RawTransaction;
-use Mdanter\Ecc\EccFactory;
+use Wangjunasd\Ecc\EccFactory;
 
 class RawTransactionTest extends PHPUnit_Framework_TestCase
 {
@@ -606,9 +606,9 @@ class RawTransactionTest extends PHPUnit_Framework_TestCase
             $randomMsgHash = $math->hexDec((string)hash('sha256', 'random' . $i));
             $randomK = $math->hexDec((string)bin2hex(mcrypt_create_iv(32, \MCRYPT_DEV_URANDOM)));
 
-            $signer = new \Mdanter\Ecc\Crypto\Signature\Signer($math);
+            $signer = new \Wangjunasd\Ecc\Crypto\Signature\Signer($math);
             $sign = $signer->sign($private, $randomMsgHash, $randomK);
-            $this->assertInstanceOf('Mdanter\Ecc\Crypto\Signature\Signature', $sign);
+            $this->assertInstanceOf('Wangjunasd\Ecc\Crypto\Signature\Signature', $sign);
 
             $sig = RawTransaction::encode_signature($sign);
             $this->assertTrue(RawTransaction::is_canonical_signature($sig));

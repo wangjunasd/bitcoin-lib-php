@@ -2,12 +2,12 @@
 
 namespace BitWasp\BitcoinLib;
 
-use Mdanter\Ecc\EccFactory;
-use Mdanter\Ecc\Primitives\GeneratorPoint;
-use Mdanter\Ecc\Primitives\PointInterface;
-use Mdanter\Ecc\Crypto\Signature\Signature;
-use Mdanter\Ecc\Crypto\Signature\Signer;
-use Mdanter\Ecc\Crypto\Key\PublicKey;
+use Wangjunasd\Ecc\EccFactory;
+use Wangjunasd\Ecc\Primitives\GeneratorPoint;
+use Wangjunasd\Ecc\Primitives\PointInterface;
+use Wangjunasd\Ecc\Crypto\Signature\Signature;
+use Wangjunasd\Ecc\Crypto\Signature\Signer;
+use Wangjunasd\Ecc\Crypto\Key\PublicKey;
 
 /**
  * BitcoinLib

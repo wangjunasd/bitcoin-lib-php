@@ -2,10 +2,10 @@
 
 namespace BitWasp\BitcoinLib;
 
-use Mdanter\Ecc\EccFactory;
-use Mdanter\Ecc\Crypto\Key\PublicKey;
-use Mdanter\Ecc\Crypto\Signature\Signature;
-use Mdanter\Ecc\Crypto\Signature\Signer;
+use Wangjunasd\Ecc\EccFactory;
+use Wangjunasd\Ecc\Crypto\Key\PublicKey;
+use Wangjunasd\Ecc\Crypto\Signature\Signature;
+use Wangjunasd\Ecc\Crypto\Signature\Signer;
 
 /**
  * Raw Transaction Library

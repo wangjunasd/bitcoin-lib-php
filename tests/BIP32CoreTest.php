@@ -20,7 +20,7 @@ class BIP32CoreTest extends PHPUnit_Framework_TestCase
 
     public function testGMP()
     {
-        $math = \Mdanter\Ecc\EccFactory::getAdapter();
+        $math = \Wangjunasd\Ecc\EccFactory::getAdapter();
 
         $I_l = "e97a4d6be13f8f5804c0a76080428fc6d51260f74801678c4127045d2640af14";
         $private_key = "142018c66b43a95de58c1cf603446fc0da322bc15fb4df068b844b57c706dd05";
